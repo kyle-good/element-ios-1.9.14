@@ -17,6 +17,10 @@
 import Foundation
 
 class MXKSendReplyEventStringLocalizer: NSObject, MXSendReplyEventStringLocalizerProtocol {
+    func replyToEndedPoll() -> String {
+        return VectorL10n.roomMessageReplyToPlaceholder
+    }
+    
     func senderSentAnImage() -> String {
         return VectorL10n.messageReplyToSenderSentAnImage
     }
